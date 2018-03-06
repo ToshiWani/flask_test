@@ -1,0 +1,29 @@
+{% extends 'test/layout.html' %}
+{% block content %}
+
+<div class="row">
+    <div class="col s6 offset-s3 z-depth-1 login-form">
+        <h5 id="title">Login Form</h5>
+        <form method="post">
+            <div class="input-field" id="username">
+                {{ form.username.label }}
+                {{ form.username(class_="validate") }}
+            </div>
+            <div class="input-field" id="password">
+                {{ form.password.label }}
+                {{ form.password(class_="validate") }}
+
+            </div>
+            <div>
+                {{ form.remember() }}
+                {{ form.remember.label }}
+            </div>
+            <div class="login-btn">
+                {{ form.csrf_token }}
+                <button type="submit" class="waves-effect waves-light btn">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

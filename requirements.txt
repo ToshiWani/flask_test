@@ -1,0 +1,5 @@
+Flask<1
+Flask-Login
+flask-ldap3-login
+Flask-PyMongo
+Flask-WTF

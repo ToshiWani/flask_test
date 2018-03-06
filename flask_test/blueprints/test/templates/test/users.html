@@ -1,0 +1,32 @@
+{% extends 'test/layout.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h1>Users</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Display Name</th>
+                        <th>Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in data %}
+                        <tr>
+                            <td>{{ i.username }}</td>
+                            <td>{{ i.display_name }}</td>
+                            <td>{{ i.is_active }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

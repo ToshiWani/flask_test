@@ -1,0 +1,26 @@
+#
+#   This is sample configuration
+#
+
+# Flask
+
+TESTING=True
+DEBUG=True
+SECRET_KEY="xxxxxxxxxxxxxxxxxxxx"
+SERVER_HOST="localhost"
+SERVER_PORT=5555
+
+# Database
+
+MONGO_HOST="xxx.xxx.xxx.x"
+MONGO_DBNAME="test"
+
+# LDAP
+
+LDAP_HOST="xxxxxx.com"
+LDAP_BIND_DIRECT_CREDENTIALS=True
+LDAP_BASE_DN="dc=xxxxxxx,dc=com"
+LDAP_USER_DN="ou=xxxxxxx"
+LDAP_GROUP_DN="ou=Users"
+LDAP_USER_RDN_ATTR="cn"
+LDAP_USER_LOGIN_ATTR="mail"

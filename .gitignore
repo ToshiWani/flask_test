@@ -1,0 +1,5 @@
+venv/
+instance/*
+!instance/*.sample
+flask_test/static/node_modules
+.idea/
